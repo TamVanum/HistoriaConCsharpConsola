@@ -20,20 +20,19 @@ namespace ConsoleApp1
             private set
             {
                 nivel = value;
-                // Cada vez que el nivel aumenta, incrementa la vida y el daño.
-                vida += 10; // Añade 10 a la vida total por cada nivel.
-                dañoMinimo += 2; // Añade 2 al daño mínimo.
-                dañoMaximo += 2; // Añade 2 al daño máximo.
+                vida += 10; 
+                dañoMinimo += 2;
+                dañoMaximo += 2;
             }
         }
 
         public Jugador(string nombre)
         {
             Nombre = nombre;
-            Nivel = 1; // Inicializa el jugador en nivel 1.
-            vida = 50; // Vida inicial.
-            dañoMinimo = 2; // Daño mínimo inicial.
-            dañoMaximo = 3; // Daño máximo inicial.
+            Nivel = 1;
+            vida = 50;
+            dañoMinimo = 2;
+            dañoMaximo = 3; 
         }
 
         public virtual int Ataque()
@@ -58,7 +57,7 @@ namespace ConsoleApp1
 
         public void SubirDeNivel()
         {
-            Nivel++; // Incrementa el nivel, lo cual también incrementa la vida y el daño.
+            Nivel++;
             Console.WriteLine($"{Nombre} ha subido al nivel {Nivel}!");
         }
     }

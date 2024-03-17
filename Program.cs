@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-using ConsoleApp1;
+﻿using ConsoleApp1;
 
 internal class Program
 {
@@ -12,9 +9,8 @@ internal class Program
         Console.WriteLine("Ingrese su nombre de jugador:");
 
         string nombreJugador = Console.ReadLine();
-        Jugador jugador = new(nombreJugador); // Asumiendo que la clase Jugador ahora puede instanciarse.
+        Jugador jugador = new(nombreJugador);
 
-        // Simulación de un combate contra un Goblin
         Goblin goblin = new();
 
         Console.WriteLine("\n=================");
@@ -24,8 +20,6 @@ internal class Program
         {
             Console.WriteLine($"{jugador.Nombre}: Vida {jugador.Vida}");
             Console.WriteLine($"{goblin.Nombre}: Vida {goblin.Vida}");
-
-            // Asegúrate de manejar adecuadamente las excepciones para la entrada del usuario.
             while (goblin.Vida > 0)
             {
                 Console.WriteLine("Opciones: (1) Ataque - (2) - (3) Huir");
