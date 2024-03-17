@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "c:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "c:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "c:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "c:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\gasto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\obj\\",
+        "outputPath": "c:\\Users\\gasto\\Desktop\\Ramocabros\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gasto\\AppData\\Roaming\\NuGet\\NuGet.Config"
