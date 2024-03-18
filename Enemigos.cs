@@ -32,10 +32,12 @@ namespace ConsoleApp1
             vida -= daño;
             if (vida <= 0)
             {
+                Console.WriteLine($"{Nombre} ha recibido {daño}"); 
                 Console.WriteLine($"{Nombre} ha sido derrotado!"); 
             }
             else
             {
+                Console.WriteLine($"{Nombre} ha recibido {daño}"); 
                 Console.WriteLine($"{Nombre} ahora tiene {vida} vida."); 
             }
         }
@@ -43,7 +45,7 @@ namespace ConsoleApp1
 
     class Goblin : Enemigo
     {
-        public Goblin() : base("Goblin", 5, 10, 1, 5)
+        public Goblin() : base("Goblin", 10, 15, 1, 5)
         {
         }
 

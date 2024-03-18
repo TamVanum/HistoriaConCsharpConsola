@@ -7,7 +7,7 @@ namespace ConsoleApp1
         protected int vida;
         public int Vida => vida;
 
-        protected readonly Random rnd = new Random();
+        protected readonly Random rnd = new();
 
         private int dañoMinimo;
         private int dañoMaximo;
@@ -20,7 +20,7 @@ namespace ConsoleApp1
             private set
             {
                 nivel = value;
-                vida += 10; 
+                vida += 10;
                 dañoMinimo += 2;
                 dañoMaximo += 2;
             }
@@ -31,8 +31,8 @@ namespace ConsoleApp1
             Nombre = nombre;
             Nivel = 1;
             vida = 50;
-            dañoMinimo = 2;
-            dañoMaximo = 3; 
+            dañoMinimo = 1;
+            dañoMaximo = 3;
         }
 
         public virtual int Ataque()
@@ -61,4 +61,32 @@ namespace ConsoleApp1
             Console.WriteLine($"{Nombre} ha subido al nivel {Nivel}!");
         }
     }
+
+    class Paladin(string nombre) : Jugador(nombre)
+    {
+        public virtual int Martillazo()
+        {
+            Console.WriteLine($"{Nombre} ha usado MARTILLAZOOOO!");
+            int ataque = 20;
+            return ataque;
+        }
+    }
+
+    class Soldado(string nombre) : Jugador(nombre)
+    {
+        public virtual int Metralleta(Enemigo enemigo)
+        {
+            int ataque = 0;
+            int ataqueTotal = 0;
+
+            for (int i = 0; i < 4; i++)
+            {
+                ataque = rnd.Next(1, 4);
+                ataqueTotal = +ataque;
+                enemigo.RecibirDaño(ataque);
+            }
+            return ataqueTotal;
+        }
+    }
+
 }
